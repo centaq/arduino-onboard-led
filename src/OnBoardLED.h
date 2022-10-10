@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #include <inttypes.h>
-#include "conf.h"
 
 class OnBoardLED {
   private:

@@ -11,10 +11,8 @@ void OnBoardLED::process() {
   if (actualTime - _startTime > _delay) {
     if (_state) {
       digitalWrite(LED_BUILTIN, 0);
-      _delay = ON_BOARD_LED_TIME_OFF;
     } else {
       digitalWrite(LED_BUILTIN, 1);
-      _delay = ON_BOARD_LED_TIME_ON;
     }
     _startTime = millis();
     _state = !_state;
